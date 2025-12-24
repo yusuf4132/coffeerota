@@ -1,9 +1,9 @@
 @use "variables" as *;
 @use "sass:color";
 header {
-  background:$dark-brown;
+  background:#023129;
   color: color.change($black, $lightness: 100%);
-  height: 118px;
+  height: 148px;
   left: 0;
   position: fixed;
   right: 0;

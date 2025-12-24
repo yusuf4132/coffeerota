@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import "./Home.css";
-import coffeeSplit from "../assets/coffee split.png"
+import logo2 from "../assets/isma_yazi.png"
 
 const Home = () => {
   useEffect(() => {
@@ -29,7 +29,9 @@ const Home = () => {
         <div className="hero_split left">
           <div className="content">
 
-            <h2 className="title">Rota Coffee</h2>
+          <h1 style={{display:"flex",alignItems:'center',justifyContent:'center'}}>
+      <img src={logo2} style={{width:'200px',marginTop:'10px'}}></img>
+      </h1>
             <p className="subtitle">
               Mantén tus sueños despiertos con una taza de café que despierta tus sentidos
               y te impulsa a conquistar el día.

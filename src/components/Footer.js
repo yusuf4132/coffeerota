@@ -2,12 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import { NavLink } from 'react-router-dom';
+import logo2 from "../assets/ismay.png"
 
 const Footer = () => {
   return (
     <footer>
       <div className="coffee-shop-footer">
-        <Logo />
+      <h1 style={{display:"flex",alignItems:'center',justifyContent:'center'}}>
+      <img src={logo2} style={{width:'110px',marginTop:'10px'}}></img>
+      </h1>
         <div className="site-links">
           <nav className="links-container">
             <Link style={{ paddingRight: "20px" }} to="/">Ana Sayfa</Link>
@@ -40,10 +43,9 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <nav style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '20px' }}>
-        <NavLink style={{ paddingRight: "20px" }} to="/admin-login">Yönetici Girişi</NavLink>
-      </nav>
-      <div className="app-footer">Tüm Hakları Saklıdır {new Date().getFullYear()}</div>
+      <nav className="app-footer">
+            <Link to="/admin-login">Tüm Hakları Saklıdır {new Date().getFullYear()}</Link>
+          </nav>
     </footer>
   );
 }
