@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import { NavLink } from 'react-router-dom';
-import logo2 from "../assets/ismay.png"
+import logo2 from "../assets/isma_logo.png"
 
 const Footer = () => {
   return (
     <footer>
       <div className="coffee-shop-footer">
       <h1 style={{display:"flex",alignItems:'center',justifyContent:'center'}}>
-      <img src={logo2} style={{width:'110px',marginTop:'10px'}}></img>
+      <img src={logo2} style={{width:'50px',marginTop:'10px'}}></img>
       </h1>
         <div className="site-links">
           <nav className="links-container">
@@ -22,6 +22,10 @@ const Footer = () => {
         <div className="other">
           <div className="contact-info">
             <div className="info hours"><span className="icon fa-regular fa-clock fa-fw" aria-hidden="true"></span> Çalışma Saatleri: Hergün 10:00 - 00:00</div>
+            <div className="info hours">
+            <span className="fa-brands fa-instagram fa-fw"></span><a href="https://www.instagram.com/coffeerota/" target="_blank" aria-label="coffeerota" title="Instagram"> coffeerota
+            </a>
+            </div>
             <div className="info address">
               <span className="icon fa-solid fa-location-dot fa-fw" aria-hidden="true"></span> <address>555 Espresso Lane Mochaville FL 55555</address>
             </div>
@@ -33,9 +37,6 @@ const Footer = () => {
             {/*<a href="" target="_blank" aria-label="Our Facebook page" title="Facebook">
               <span className="fa-brands fa-facebook fa-fw"></span>
   </a>*/}
-            <a href="https://www.instagram.com/coffeerota/" target="_blank" aria-label="coffeerota" title="Instagram">İnstagram:
-              <span className="fa-brands fa-instagram fa-fw"></span>
-            </a>
             {/*<a href="" target="_blank" aria-label="Our Bluesky account" title="Bluesky">
               <span className="fa-brands fa-bluesky fa-fw"></span>
 </a>*/}
