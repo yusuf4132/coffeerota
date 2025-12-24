@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import MenuList from '../components/MenuList';
 import HeroBanner from '../components/HeroBanner';
 import menuHeroBanner from '../assets/images/menu-hero-banner.jpg';
-
 const Menu = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
   return (
     <React.Fragment>
       <HeroBanner heading="Menümüz" imageFile={menuHeroBanner} />

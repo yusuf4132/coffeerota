@@ -9,6 +9,9 @@ export default function AdminLogin() {
     const [snackbar, setSnackbar] = useState({
         open: false, message: '', severity: 'success'
     });
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const navigate = useNavigate();
 
     const handleLogin = async () => {

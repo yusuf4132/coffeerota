@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HeroBanner from '../components/HeroBanner';
 import visitHeroBanner from '../assets/images/visit-hero-banner.jpg';
-
 const Visit = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
   return (
     <React.Fragment>
       <HeroBanner heading="ZİYARET EDİN" imageFile={visitHeroBanner} />

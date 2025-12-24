@@ -24,6 +24,9 @@ export default function AdminPage() {
     const [loading, setLoading] = useState(true);
     const navigate=useNavigate();
     const [logoutLoading, setLogoutLoading] = useState(false);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const [newItem, setNewItem] = useState({
         itemName: "",

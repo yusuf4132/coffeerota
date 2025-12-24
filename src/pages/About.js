@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HeroBanner from '../components/HeroBanner';
 import aboutHeroBanner from '../assets/images/about-hero-banner.jpg';
 import foundersOurStory from '../assets/images/founders-our-story.jpg';
 import foundersOurMission from '../assets/images/founders-our-mission.jpg';
-
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
   return (
     <React.Fragment>
       <HeroBanner heading="Hakkımızda" imageFile={aboutHeroBanner} />
